@@ -7,14 +7,25 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
   </head>
-  <body>
-    <form>
-      <input type="text" id="message" placeholder="Message" />
-      <input type="submit" value="Send" />
+  <body class="bg-black/90 min-h-screen grid place-content-center mx-auto container font">
+    <form class="flex items-center">
+      <input type="text" id="message" placeholder="Message" class="pl-2 text-black"/>
+      <input type="submit" value="Send" class=" bg-black px-2"/>
     </form>
-    <ul class="bg-red-500">
-      hola
+    <ul class="">
+      ul
     </ul>
   </body>
 </html>
